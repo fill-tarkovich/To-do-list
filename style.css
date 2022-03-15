@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -10,15 +17,26 @@
 body {
   width: 100vw;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: sans-serif;
 }
 
 .wrapper {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 20px;
 }
@@ -43,7 +61,10 @@ p {
 }
 
 .todo-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 100%;
   margin: 40px 0px;
@@ -61,6 +82,7 @@ p {
 }
 
 .task-input:hover {
+  -webkit-box-shadow: 0 0 6px rgba(105, 178, 83, 0.6);
   box-shadow: 0 0 6px rgba(105, 178, 83, 0.6);
 }
 
@@ -88,21 +110,32 @@ button:hover {
   background-color: #fff;
   padding: 10px;
   font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   border-radius: 7px;
   margin: auto;
   margin-bottom: 1.4rem;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
 }
 
 .item:hover {
+  -webkit-box-shadow: 0 0 6px rgba(105, 178, 83, 0.6);
   box-shadow: 0 0 6px rgba(105, 178, 83, 0.6);
 }
 
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
