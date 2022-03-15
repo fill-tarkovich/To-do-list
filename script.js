@@ -63,7 +63,7 @@ function toggle(id) {
   addToLocalStorage(tasks);
 }
 
-function deleteTodo(id) {
+function deleteTask(id) {
   tasks = tasks.filter(function (item) {
     return item.id != id;
   });
@@ -77,6 +77,6 @@ todoItemsList.addEventListener("click", function (event) {
     toggle(event.target.parentElement.getAttribute("data-key"));
   }
   if (event.target.classList.contains("delete-button")) {
-    deleteTodo(event.target.parentElement.getAttribute("data-key"));
+    deleteTask(event.target.parentElement.getAttribute("data-key"));
   }
 });
